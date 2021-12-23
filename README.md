@@ -9,7 +9,7 @@ Applying Deep Learning Techniques to predict and generate music sequences is a f
 
 
 ## Dataset
-The dataset is made up of 92 MIDI files containing an assortment of piano music. The dataset is available [here](https://github.com/umaniamir/music_dataset).
+The dataset is made up of 92 MIDI files containing an assortment of piano music. The dataset is available [here](https://github.com/Skuldur/Classical-Piano-Composerhttps://github.com/Skuldur/Classical-Piano-Composer).
 
 If normalized to 120 BPM, the dataset is approximately 3 hours long (22,752 quarter notes). Some pieces contain multiple instruments and multiple piano voices. Only the first two piano parts were taken from each piece (usually the treble and bass), for simplicity.
 
