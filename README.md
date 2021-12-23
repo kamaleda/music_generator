@@ -20,7 +20,7 @@ The data was organized by transforming the MIDI files into a multi-hot encoding 
 
 The music was split into 16 beat segments (256 time-steps). The multi-hot encoding can be visualized as a piano roll like the one seen below:
 
-![image](https://user-images.githubusercontent.com/78668152/147271813-9e774620-ad6e-4023-879f-dd880c868d4c.png)
+<img src="https://user-images.githubusercontent.com/78668152/147271813-9e774620-ad6e-4023-879f-dd880c868d4c.png" width="512">
 
 In some instances, to reduce training time and complexity, the number of notes was reduced by removing notes that occured <100 times throughout the entire dataset.
 
