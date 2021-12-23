@@ -18,8 +18,11 @@ The data was organized by transforming the MIDI files into a multi-hot encoding 
 - A constant velocity (music note strength)
 - Expanded by transposing notes by previous and following music keys
 
-![image](https://user-images.githubusercontent.com/78668152/146981600-1e03fc07-a60b-40d5-aee1-1f1ff65bc5b9.png)
+The music was split into 16 beat segments (256 time-steps). The multi-hot encoding can be visualized as a piano roll like the one seen below:
 
+![image](https://user-images.githubusercontent.com/78668152/147271813-9e774620-ad6e-4023-879f-dd880c868d4c.png)
+
+In some instances, to reduce training time and complexity, the number of notes was reduced by removing notes that occured <100 times throughout the entire dataset.
 
 
 
