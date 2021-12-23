@@ -11,12 +11,12 @@ Applying Deep Learning Techniques to predict and generate music sequences is a f
 ## Dataset
 The dataset is made up of 92 MIDI files containing an assortment of piano music. The dataset is available [here](https://github.com/umaniamir/music_dataset).
 
-Some pieces contain multiple instruments and multiple piano voices. Only the first two piano parts were taken from each piece (usually the treble and bass), for simplicity.
+If normalized to 120 BPM, the dataset is approximately 3 hours long (22,752 quarter notes). Some pieces contain multiple instruments and multiple piano voices. Only the first two piano parts were taken from each piece (usually the treble and bass), for simplicity.
 
 The data was organized by transforming the MIDI files into a multi-hot encoding of the piano music using the music21 library with the following characteristics:
 - A fixed time-step of a 1/16th note
 - A constant velocity (music note strength)
-- Expanded by transposing notes by previous and following music keys
+- Expanded by transposing notes by previous and following music keys (Transposing an additional three times, dataset is now 12 hours long)
 
 The music was split into 16 beat segments (256 time-steps). The multi-hot encoding can be visualized as a piano roll like the one seen below:
 
